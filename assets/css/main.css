@@ -5774,6 +5774,7 @@ body.body {
 }
 @media (max-width: 767px) {
   .hero-area1 .hero1-images {
+    height: 330px;
     margin-right: 0;
     margin-bottom: 60px;
   }
@@ -7016,7 +7017,7 @@ body.body {
 .project-two {
   position: relative;
   display: block;
-  padding: 140px 0 157px;
+  /*padding: 140px 0 157px;*/
 }
 
 .project-two__top {
