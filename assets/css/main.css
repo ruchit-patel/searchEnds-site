@@ -1629,7 +1629,7 @@ body.body {
   --vtc-bg-main-bg-5: #19326A;
   --vtc-bg-main-bg-6: #52B5E9;
   --vtc-bg-common-bg1: #FFF2E6;
-  --vtc-bg-common-bg2: #F5F3F4;
+  --vtc-bg-common-bg2: #f1fcff;
   --vtc-bg-common-bg3: #28284D;
   --vtc-bg-common-bg4: #FFFAEC;
   --vtc-bg-common-bg5: #FFF4EF;
@@ -9754,7 +9754,7 @@ body.body {
 ::::::::::::::::::::::::::
 */
 .header-area.header-area1 {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--vtc-bg-common-bg2);
 }
 .header-area.header-area1 .header1-buttons {
   display: flex;
