@@ -4477,7 +4477,7 @@ body.body {
   transition: all 0.4s;
 }
 .faq-all-area .accordion-item.active .accordion-body {
-  color: rgba(255, 255, 255, 0.6980392157) !important;
+  color: #fff !important;
 }
 .faq-all-area .accordion-item.active .accordion-button:not(.collapsed)::after {
   background-image: var(--bs-accordion-btn-active-icon);
@@ -8634,6 +8634,7 @@ body.body {
   display: flex;
   align-items: center;
   padding: 6px 0px;
+  flex-shrink: 0;
 }
 .project-details-list ul li span {
   display: inline-block;
@@ -9756,6 +9757,10 @@ body.body {
 .header-area.header-area1 {
   border-bottom: 1px solid var(--vtc-bg-common-bg2);
 }
+.header-area.header-area1.sticky {
+  border-bottom: 1px solid var(--vtc-bg-common-bg2);
+  background-color: var(--vtc-bg-common-bg2);
+}
 .header-area.header-area1 .header1-buttons {
   display: flex;
   align-items: center;
@@ -9830,6 +9835,8 @@ body.body {
   height: auto;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .site-logo a {
@@ -9837,6 +9844,28 @@ body.body {
   position: relative;
   z-index: 9;
 }
+
+.site-logo:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-45deg);
+  animation: shine 1s forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
 
 .header-area .header-elements {
   display: flex;

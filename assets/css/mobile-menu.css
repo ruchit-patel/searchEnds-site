@@ -57,7 +57,7 @@ Desc:
         width: 100%;
         padding: 17px 0;
         z-index: 999;
-        background: #fff;
+        background: #f1fcff;
     }
 
     .mobile-header.mobile-header-main {
@@ -67,7 +67,7 @@ Desc:
         width: 100%;
         padding: 17px 0;
         z-index: 999;
-        background: #fff;
+        background: #f1fcff;
     }
     
     .mobile-header-elements {
